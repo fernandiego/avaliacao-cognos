@@ -9,13 +9,10 @@
 <div>
     <div>
         <h1>Avaliação para a vaga de estágio na Cognos - Startup parceira da CSI locações</h1>
-
-        <ul>
-            <li>A avaliação consiste em consumir uma API, exibindo os dados em uma tela</li>
-</ul>
+            <h2>A avaliação consiste em consumir uma API, exibindo os dados em uma tela</h2>
 </div>
 <h2>As regras são:</h2>
-<img src="img/frontend.png"/>
+
 <ul>
 
 <li>
