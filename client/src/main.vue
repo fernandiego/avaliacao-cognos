@@ -1,5 +1,5 @@
 <template>
-  
+  <div>{{message}}</div>
 </template>
 
 <script>
@@ -13,10 +13,7 @@ module.exports = {
     return {
       films: [],
       film: {
-        filmtitle: "",
-        filmdirector: "",
-        filmreleasedt: "",
-        filmdescription: ""
+        
       }
     };
   },

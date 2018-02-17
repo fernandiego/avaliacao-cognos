@@ -11,6 +11,10 @@
         <h1>Avaliação para a vaga de estágio na Cognos - Startup parceira da CSI locações</h1>
             <h2>A avaliação consiste em consumir uma API, exibindo os dados em uma tela</h2>
 </div>
+<br>
+<img src="https://davidwalsh.name/demo/vue-logo.png" alt="vue logo" style="width:90px;height:67px;"/>
+<img src="https://i1.wp.com/developerschool.com.br/edu/wp-content/uploads/2017/04/html-css-js.png?resize=300%2C176" alt="tríade front end" style="width:150px;height:100px;"/>
+<br>
 <h2>As regras são:</h2>
 
 <ul>
@@ -81,4 +85,6 @@ vueify, simples, leve e segue os padrões de especificação de material design 
 <li>E é isso. =)</li>
 </ul>
 </div>
-</body></html>
+<img src="C:\Users\FOX\Documents\Git\avaliacao-cognos\client\img\frontend.png" />
+</body>
+</html>
