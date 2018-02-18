@@ -1,89 +1,37 @@
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<head>
+**Autor: Fernando Nascimento Contato: fernandodiego.sn@gmail.com**
 
-</head>
-<body style="font-family:lucida-console;color:white;background-color:black">
-<div>
-<br>
-Autor: Fernando Nascimento Contato: fernandodiego.sn@gmail.com
-    <div>
-        <h1>Avaliação para a vaga de estágio na Cognos - Startup parceira da CSI locações</h1>
-            <h2>A avaliação consiste em consumir uma API, exibindo os dados em uma tela</h2>
-</div>
-<h2>As regras são:</h2>
+# Avaliação para a vaga de estágio na Cognos - Startup parceira da CSI locações
 
-<ul>
+## A avaliação consiste em consumir uma API, exibindo os dados em uma tela
 
-<li>
-API: https://ghibliapi.herokuapp.com/#tag/Films
-</li>
-<li>
-Utilizar o end point: GET /films
-</li>
-<li>
-Exibir informações sobre os filmes como, título, diretor, data de lançamento e descrição
-</li>
-<li>
-Utilizar javascript (De preferência framework Angular 4/5)
-</li>
-<li>
-Utilizar qualquer framework CSS (Preferência por Material-Angular)
-</li>
-</ul>
+## As regras são:
 
+* Consumir esta API: https://ghibliapi.herokuapp.com/#tag/Films
+* Utilizar o end point: GET /films
+* Exibir informações sobre os filmes como: título, diretor, data de lançamento e descrição
+* Utilizar javascript (De preferência framework Angular 4/5)
+* Utilizar qualquer framework CSS (Preferência por Material-Angular)
 
-<h2>Esta versão foi criada utilizando as seguintes ferramentas:</h2>
-<ul>
+## Esta versão foi criada utilizando as seguintes ferramentas:
 
-<li>
-Node, utilizando o npm como nosso package manager
-</li>
-<li>
-Axios, HTTP client
-</li>
-<li>
-Bulma, framework de CSS baseado no FlexBox
-</li>
-<li>
-Browserify, nos permite usar o padrão de módulos do NodeJS no navegador. <br>Nós definimos as dependências e depois o Browserify empacota tudo isso em apenas um arquivo JS, limpo e estruturado. <br>Você inclui os arquivos necessários usando require('./seuArquivo.js')
-</li>
-<li>
-browserify-css, o mesmo que o acima, mas específico para CSS
-</li>
-<li>
-Budo, servidor para desenvolvimento para dar reload na página automaticamente ao atualizar o código 
-</li>
-<li>
-Vue,(pronounced /vjuː/, like view). Framework javascript para criar interfaces de usuário.<br>
-<a href="https://vuejs.org/v2/guide/comparison.html">Comparação com outros frameworks</a>
-</li>
-<li>
-vue-material, simples, leve e segue os padrões de especificação de material design do Google
-</li>
-<li>
-vueify, simples, leve e segue os padrões de especificação de material design do Google
-</li>
+* Node, utilizando o npm como nosso package manager
+* Axios, HTTP client
+* vue-material, CSS do vue baseado em material design
+* Browserify, nos permite usar o padrão de módulos do NodeJS no navegador. Nós definimos as dependências e depois o Browserify empacota tudo isso em apenas um arquivo JS
+* browserify-css, transformação browserify que explica como carregar arquivo CSS
+* Budo, servidor para desenvolvimento para dar reload na página automaticamente ao atualizar o código
+* Vue,(pronounced /vjuː/, like view). Framework reativo javascript para criar interfaces modernas de usuário.
+* [Comparação do vue com outros frameworks JS!](https://vuejs.org/v2/guide/comparison.html)
+* vue-material, implementação do material design para o vue
+* vueify, transformação browserify para empacotar arquivos .vue
 
-</ul>
+![vue logo](img/frontend.png) ![tríade front end](img/Vue.png)
 
-<br>
-<img src="client/img/Vue.png" alt="vue logo" style="width:90px;height:67px;"/>
-<img src="https://i1.wp.com/developerschool.com.br/edu/wp-content/uploads/2017/04/html-css-js.png?resize=300%2C176" alt="tríade front end" style="width:150px;height:100px;"/>
-<br>
+## Configurando o ambiente
 
-<h2>Configurando o ambiente</h2>
-<ul>
-<li>Instalar o node <a href="https://nodejs.org/en/download/">link</a></li>
-<li>Dê checkout no projeto</li>
-<li>Usar o npm para instalar os módulos</li>
-<li>Na pasta client, abra o terminal e utilize o comando npm install</li>
-<li>Pronto! Ambiente configurado</li>
-<li>Na pasta client, pelo terminal rode o comando npm run dev</li>
-<li>E é isso. =)</li>
-</ul>
-</div>
-</body>
-</html>
+* [Instalar o node!](https://nodejs.org/en/download/)
+* Checkout neste projeto
+* Na pasta client, abra o terminal e utilize o comando npm install
+* Pronto! Ambiente configurado
+* Na pasta client, pelo terminal execute o comando npm run dev
+* E é isso. =)

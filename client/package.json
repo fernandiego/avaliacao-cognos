@@ -5,15 +5,17 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "budo src/main.js:build.js -o -l"
+    "dev": "budo src/main.js:build.js -o -l -H 127.0.0.1",
+    "build": "browserify src/main.js -o build.js"
   },
   "author": "Fernando Nascimento",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.17.1",
     "bulma": "^0.6.2",
+    "material-design-icons-iconfont": "^3.0.3",
     "vue": "^2.5.13",
-    "vue-material": "^1.0.0-beta-8"
+    "vue-material": "^0.8.1"
   },
   "devDependencies": {
     "browserify": "^16.1.0",

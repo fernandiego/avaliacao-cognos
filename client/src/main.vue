@@ -1,6 +1,5 @@
 <template>
 <div>
-
     <div class="box panel">
       <img class="logosg" src="img/studio-ghibli.png"/>
       <img class="diretores" v-bind:title="hayaoMiya" src="img/hayao-miyazaki.jpg"/>
@@ -9,40 +8,22 @@
       <img class="diretores" v-bind:title="hiroMori" src="img/hiroyuki-morita.jpg"/>
       <img class="diretores" v-bind:title="goroMiya" src="img/goro-miyazaki.jpg"/>
       <img class="diretores" v-bind:title="hiroYonebay" src="img/hiromasa-yonebayashi.jpg"/>
-      
     </div>
-    <div class="panel">
-      <!-- Header com os títulos   -->
-      <div class="columns is-mobile is-centered box is-danger">
-          
-          <div class="column red"><strong>Título</strong></div>
-          <div class="column"><strong>Diretor</strong></div>
-          <div class="column is-7"><strong>Descrição</strong></div>
-          <div class="column"><strong>Data de lançamento</strong></div>
-          
-      </div>
-      
-      <!-- Retornando as informações coletadas   -->
-      <div v-bind:title="message" v-for="f in films" :key="f.id" class="columns is-mobile box">
-           
-           <!-- Título -->
-           <div class="column">
-                <div>{{f.title}}</div>
-            </div>
-            <!-- Diretor -->
-           <div class="column">
-               <div>{{f.director}}</div>
-           </div>
-            <!-- Descrição -->
-           <div class="column is-7">
-               <div>{{f.description}}</div>
-            </div>
-            <!-- Data de lançamento -->
-           <div class="column">
-               <div>{{f.release_date}}</div>
-           </div>
-      </div>
-    </div>
+    <md-table @sort="ordena">
+      <md-table-row>
+        <md-table-head>Título</md-table-head>
+        <md-table-head>Diretor</md-table-head>
+        <md-table-head>Descrição</md-table-head>
+        <md-table-head md-sort-by="release_date">Data de lançamento</md-table-head>
+      </md-table-row>
+      <md-table-row v-for="f in films" :key="f.id">
+        <md-table-cell>{{f.title}}</md-table-cell>
+        <md-table-cell>{{f.director}}</md-table-cell>
+        <md-table-cell>{{f.description}}</md-table-cell>
+        <md-table-cell>{{f.release_date}}</md-table-cell>
+      </md-table-row>
+    </md-table>
+
 </div>
 </template>
 
@@ -52,8 +33,8 @@ const { studioghibliapi } = require("./api");
 module.exports = {
   name: "films",
   created() {
-    // Listando todos os filmes assim que renderizar a tela  
-    this.listfilm()
+    // Listando todos os filmes assim que renderizar a tela
+    this.listfilm();
   },
   data() {
     return {
@@ -63,27 +44,32 @@ module.exports = {
       hiroMori: "Hiroyuki Morita",
       goroMiya: "Gorō Miyazaki",
       hiroYonebay: "Hiromasa Yonebayashi",
-      message: "Retornar aqui o Score no rotten tomatoes, tem no json",  
-      films: [],
-      film: {}
-    }
+      message: "Retornar aqui o Score no rotten tomatoes, tem no json",
+      films: []
+    };
   },
   methods: {
-    // Método para listar todos os filmes  
+    // Método para listar todos os filmes
     listfilm() {
-      studioghibliapi.list().then(ret => (this.films = ret.data))
+      studioghibliapi.list().then(ret => (this.films = ret.data));
+    },
+    ordena(col) {
+      if (col.type == "asc") {
+        this.films.sort((a, b) => a[col.name] - b[col.name]);
+      } else {
+        this.films.sort((a, b) => b[col.name] - a[col.name]);
+      }
     }
   }
-}
+};
 </script>
 
 <style scoped>
-.diretores{
-  width: 90px;
-  height:130px;
+.diretores {
+  width: 100px;
+  height: 140px;
 }
-.logosg{
-  width: 250px;
+.logosg {
+  width: 300px;
 }
-
 </style>
