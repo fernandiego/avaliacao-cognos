@@ -1,14 +1,34 @@
 <template>
 <div>
-    <div class="box panel">
+    <md-whiteframe class="md-primary" md-elevation="2">
       <img class="logosg" src="img/studio-ghibli.png"/>
-      <img class="diretores" v-bind:title="hayaoMiya" src="img/hayao-miyazaki.jpg"/>
-      <img class="diretores" v-bind:title="isaoTaka" src="img/isao-takahata.jpg"/>
-      <img class="diretores" v-bind:title="yoshiKon" src="img/yoshifumi-kondo.JPG"/>
-      <img class="diretores" v-bind:title="hiroMori" src="img/hiroyuki-morita.jpg"/>
-      <img class="diretores" v-bind:title="goroMiya" src="img/goro-miyazaki.jpg"/>
-      <img class="diretores" v-bind:title="hiroYonebay" src="img/hiromasa-yonebayashi.jpg"/>
-    </div>
+      
+      <md-avatar class="md-large">
+        <img src="img/hayao-miyazaki.jpg"/>
+        <md-tooltip>{{hayaoMiya}}</md-tooltip>
+      </md-avatar>
+      <md-avatar class="md-large">
+        <img src="img/isao-takahata.jpg"/>
+        <md-tooltip>{{isaoTaka}}</md-tooltip>
+      </md-avatar>
+      <md-avatar class="md-large">
+        <img src="img/yoshifumi-kondo.JPG"/>
+        <md-tooltip>{{yoshiKon}}</md-tooltip>
+      </md-avatar>
+      <md-avatar class="md-large">
+        <img src="img/hiroyuki-morita.jpg"/>
+        <md-tooltip>{{hiroMori}}</md-tooltip>
+      </md-avatar>
+      <md-avatar class="md-large">
+        <img src="img/goro-miyazaki.jpg"/>
+        <md-tooltip>{{goroMiya}}</md-tooltip>
+      </md-avatar>
+      <md-avatar class="md-large">
+        <img src="img/hiromasa-yonebayashi.jpg"/>
+        <md-tooltip>{{hiroYonebay}}</md-tooltip>
+      </md-avatar>
+      
+    </md-whiteframe>
     <md-table @sort="ordena">
       <md-table-row>
         <md-table-head>Título</md-table-head>
@@ -21,6 +41,7 @@
         <md-table-cell>{{f.director}}</md-table-cell>
         <md-table-cell>{{f.description}}</md-table-cell>
         <md-table-cell>{{f.release_date}}</md-table-cell>
+        <md-tooltip>{{`Pontuação no Rotten Tomatoes ${f.rt_score}`}}</md-tooltip>
       </md-table-row>
     </md-table>
 
