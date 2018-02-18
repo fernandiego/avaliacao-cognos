@@ -7,14 +7,12 @@
 </head>
 <body style="font-family:lucida-console;color:white;background-color:black">
 <div>
+<br>
+Autor: Fernando Nascimento Contato: fernandodiego.sn@gmail.com
     <div>
         <h1>Avaliação para a vaga de estágio na Cognos - Startup parceira da CSI locações</h1>
             <h2>A avaliação consiste em consumir uma API, exibindo os dados em uma tela</h2>
 </div>
-<br>
-<img src="https://davidwalsh.name/demo/vue-logo.png" alt="vue logo" style="width:90px;height:67px;"/>
-<img src="https://i1.wp.com/developerschool.com.br/edu/wp-content/uploads/2017/04/html-css-js.png?resize=300%2C176" alt="tríade front end" style="width:150px;height:100px;"/>
-<br>
 <h2>As regras são:</h2>
 
 <ul>
@@ -71,6 +69,10 @@ vueify, simples, leve e segue os padrões de especificação de material design 
 
 </ul>
 
+<br>
+<img src="https://davidwalsh.name/demo/vue-logo.png" alt="vue logo" style="width:90px;height:67px;"/>
+<img src="https://i1.wp.com/developerschool.com.br/edu/wp-content/uploads/2017/04/html-css-js.png?resize=300%2C176" alt="tríade front end" style="width:150px;height:100px;"/>
+<br>
 
 <h2>Configurando o ambiente</h2>
 <ul>

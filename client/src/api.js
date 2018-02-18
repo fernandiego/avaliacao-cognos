@@ -4,9 +4,9 @@ const api = axios.create({
 })
 
 const studioghibliapi = {
-    list: _ => api.get("/films", (req, res).then(ret => {
+    list: _ => api.get("/films", (req, res) => {
         res.send(ret)
-    }))
+    })
 }
 
 module.exports = {
