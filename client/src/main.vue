@@ -2,14 +2,13 @@
 <div>
 
     <div class="box panel">
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png" 
-      width="420" height="100" alt="Studio Ghibli"/>
-      <img v-bind:title="hayaoMiya" src="https://img.fstatic.com/uZc_xd-4_qqtQ-wiWSzcszo1akg=/full-fit-in/290x478/https://cdn.fstatic.com/media/artists/avatar/2014/02/hayao-miyazaki_a35640_2.jpg" width="80" height="120"/>
-      <img v-bind:title="isaoTaka" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNDM5OTc2NjI1MV5BMl5BanBnXkFtZTgwOTI3MjA4MTE@._V1_UX214_CR0,0,214,317_AL_.jpg" width="80" height="120"/>
-      <img v-bind:title="yoshiKon" src="https://1.bp.blogspot.com/-nXv9h7LTzpg/UVWbpKI8wNI/AAAAAAAACZU/4hPiUSdIn50/s1600/yoshifumi-kondo-3.JPG" width="80" height="120"/>
-      <img v-bind:title="hiroMori" src="http://site.studioghibli.com.br/download/imagens/diretores/hiroyukimorita.jpg" width="80" height="120"/>
-      <img v-bind:title="goroMiya" src="http://site.studioghibli.com.br/download/imagens/diretores/goromiyazaki.jpg" width="80" height="120"/>
-      <img v-bind:title="hiroYonebay" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hiromasa_Yonebayashi.jpg/220px-Hiromasa_Yonebayashi.jpg" width="80" height="120"/>
+      <img class="logosg" src="img/studio-ghibli.png"/>
+      <img class="diretores" v-bind:title="hayaoMiya" src="img/hayao-miyazaki.jpg"/>
+      <img class="diretores" v-bind:title="isaoTaka" src="img/isao-takahata.jpg"/>
+      <img class="diretores" v-bind:title="yoshiKon" src="img/yoshifumi-kondo.JPG"/>
+      <img class="diretores" v-bind:title="hiroMori" src="img/hiroyuki-morita.jpg"/>
+      <img class="diretores" v-bind:title="goroMiya" src="img/goro-miyazaki.jpg"/>
+      <img class="diretores" v-bind:title="hiroYonebay" src="img/hiromasa-yonebayashi.jpg"/>
       
     </div>
     <div class="panel">
@@ -78,6 +77,13 @@ module.exports = {
 }
 </script>
 
-<style>
+<style scoped>
+.diretores{
+  width: 90px;
+  height:130px;
+}
+.logosg{
+  width: 250px;
+}
 
 </style>

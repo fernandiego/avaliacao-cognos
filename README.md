@@ -70,7 +70,7 @@ vueify, simples, leve e segue os padrões de especificação de material design 
 </ul>
 
 <br>
-<img src="https://davidwalsh.name/demo/vue-logo.png" alt="vue logo" style="width:90px;height:67px;"/>
+<img src="client/img/Vue.png" alt="vue logo" style="width:90px;height:67px;"/>
 <img src="https://i1.wp.com/developerschool.com.br/edu/wp-content/uploads/2017/04/html-css-js.png?resize=300%2C176" alt="tríade front end" style="width:150px;height:100px;"/>
 <br>
 
@@ -79,14 +79,11 @@ vueify, simples, leve e segue os padrões de especificação de material design 
 <li>Instalar o node <a href="https://nodejs.org/en/download/">link</a></li>
 <li>Dê checkout no projeto</li>
 <li>Usar o npm para instalar os módulos</li>
-<li>Na pasta client, abra o terminal e utilize os comandos abaixo para trazer os módulos</li>
-<li>npm install axios bulma vue vue-material --save </li>
-<li>npm install browserify browserify-css bulma vueify --save-dev </li>
+<li>Na pasta client, abra o terminal e utilize o comando npm install</li>
 <li>Pronto! Ambiente configurado</li>
 <li>Na pasta client, pelo terminal rode o comando npm run dev</li>
 <li>E é isso. =)</li>
 </ul>
 </div>
-<img src="C:\Users\FOX\Documents\Git\avaliacao-cognos\client\img\frontend.png" />
 </body>
 </html>
