@@ -35,7 +35,7 @@ Utilizar qualquer framework CSS (Preferência por Material-Angular)
 </ul>
 
 
-<h2>Esta versão foi criada utilizando os seguintes ferramentas:</h2>
+<h2>Esta versão foi criada utilizando as seguintes ferramentas:</h2>
 <ul>
 
 <li>
