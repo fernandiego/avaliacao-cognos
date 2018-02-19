@@ -1,6 +1,6 @@
 <template>
 <div>
-    <md-whiteframe class="md-primary" md-elevation="2">
+    <md-whiteframe class="md-primary" md-elevation="5">
       <img class="logosg" src="img/studio-ghibli.png"/>
       
       <md-avatar class="md-large">
@@ -75,7 +75,7 @@ module.exports = {
       studioghibliapi.list().then(ret => (this.films = ret.data));
     },
     ordena(col) {
-      if (col.type == "asc") {
+      if (col.type != "asc") {
         this.films.sort((a, b) => a[col.name] - b[col.name]);
       } else {
         this.films.sort((a, b) => b[col.name] - a[col.name]);

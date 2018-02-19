@@ -1,6 +1,6 @@
-**Autor: Fernando Nascimento Contato: fernandodiego.sn@gmail.com**
-
 # Avaliação para a vaga de estágio na Cognos - Startup parceira da CSI locações
+* **Autor: Fernando Nascimento** 
+* **Contato: fernandodiego.sn@gmail.com**
 
 ## A avaliação consiste em consumir uma API, exibindo os dados em uma tela
 
@@ -35,3 +35,11 @@
 * Pronto! Ambiente configurado
 * Na pasta client, pelo terminal execute o comando npm run dev
 * E é isso. =)
+
+## Resultado da tela
+![tela](img/overview.PNG)
+
+## Extra
+* Como desafio eu resolvi tentar fazer além do vue, em angular também
+* Tive dificuldades, mas com muita pesquisa (Encontrei bons exemplos) consegui alguma coisa
+* Podem conferir aqui neste [repositório!](https://github.com/fernandiego/avaliacao-cognos-angular)
