@@ -25,7 +25,7 @@
 * vue-material, implementação do material design para o vue
 * vueify, transformação browserify para empacotar arquivos .vue
 
-![vue logo](img/frontend.png) ![tríade front end](img/Vue.png)
+![vue logo](client/img/frontend.png) ![tríade front end](client/img/Vue.png)
 
 ## Configurando o ambiente
 
@@ -37,7 +37,7 @@
 * E é isso. =)
 
 ## Resultado da tela
-![tela](img/overview.PNG)
+![tela](client/img/overview.PNG)
 
 ## Extra
 * Como desafio eu resolvi tentar fazer além do vue, em angular também
